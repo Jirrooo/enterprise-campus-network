@@ -167,25 +167,3 @@ exit
    * Pengujian remote CLI via terminal PC menggunakan perintah `ssh -l admin 10.10.100.2` berhasil terhubung dengan enkripsi SSH v2.
 
 ---
-
-## Project File Structure
-
-```text
-enterprise-campus-network/
-├── docs/
-│   ├── topology-diagram.png
-│   ├── hsrp-verification.png
-│   ├── ospf-neighbor-check.png
-│   └── web-dmz-test.png
-├── pkt/
-│   └── Enterprise-Campus-Network.pkt
-├── configs/
-│   ├── RT-CORE-ISP.txt
-│   ├── RT-BRANCH.txt
-│   ├── MLS-DIST-01.txt
-│   ├── MLS-DIST-02.txt
-│   ├── SW-ACC-GEDUNG-A.txt
-│   └── SW-ACC-GEDUNG-B.txt
-├── .gitignore
-└── README.md
-```
