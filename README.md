@@ -66,7 +66,7 @@ Seluruh arsitektur dikonfigurasi, diuji, dan diverifikasi penuh pada simulator *
 ```
 
 ### Topology Visual
-![Topology Diagram](docs/topology-diagram.png)
+![Topology Diagram](docs/topology diagram.png)
 
 ---
 
@@ -151,16 +151,16 @@ exit
 
 1. **HSRP Redundancy Verification**:
    * Menjalankan `show standby brief` pada `MLS-DIST-01` mengonfirmasi seluruh SVI (VLAN 10–50) berstatus **`Active`** dengan Virtual IP **`.254`**.
-   * ![HSRP Verification](docs/hsrp-verification.png)
+   * ![HSRP Verification](docs/hrsp verication.png)
 
 2. **OSPF Neighbor Adjacency**:
    * Menjalankan `show ip ospf neighbor` pada `RT-CORE-ISP` mengonfirmasi status **`FULL/DR`** atau **`FULL/BDR`** dengan `MLS-DIST-01` (`1.1.1.1`) dan `RT-BRANCH` (`3.3.3.3`).
-   * ![OSPF Neighbor Check](docs/ospf-neighbor-check.png)
+   * ![OSPF Neighbor Check](docs/ospf neighbor check.png)
 
 3. **End-to-End Connectivity & Service Testing**:
    * Berhasil melakukan *ICMP Ping* dari `PC-BRANCH` (`192.168.100.10`) melintasi koneksi WAN OSPF menuju PC HR Gedung A (`192.168.10.10`) dan Server DMZ (`10.10.50.2`).
    * Resolusi domain berhasil via Web Browser: Pengujian URL `portal.enterprise.com` dari `PC-BRANCH` berhasil menampilkan halaman Web DMZ.
-   * ![Web DMZ Test](docs/web-dmz-test.png)
+   * ![Web DMZ Test](docs/web dmz test.png)
 
 4. **Security Audit (SSH Access)**:
    * Pengujian remote CLI via terminal PC menggunakan perintah `ssh -l admin 10.10.100.2` berhasil terhubung dengan enkripsi SSH v2.
