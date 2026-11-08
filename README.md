@@ -3,8 +3,6 @@
 ## Overview
 Proyek ini mengimplementasikan infrastruktur jaringan skala enterprise multi-lokasi (*Headquarters* dan *Branch Office*) menggunakan pendekatan **Cisco 3-Layer Hierarchical Model** (Core, Distribution, Access). Desain ini dirancang untuk menjamin ketersediaan tinggi (*High Availability*), redundansi link, serta keamanan akses menuju area *Server Farm* (DMZ).
 
-Seluruh arsitektur dikonfigurasi, diuji, dan diverifikasi penuh pada simulator **Cisco Packet Tracer**.
-
 ---
 
 ## Technical Highlights & Key Features
