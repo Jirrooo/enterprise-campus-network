@@ -1,9 +1,5 @@
 # Multi-Site Enterprise Campus Network Architecture with High Availability & Security
 
-[![Cisco Packet Tracer](https://img.shields.io/badge/Simulator-Cisco%20Packet%20Tracer-blue)](https://www.netacad.com/courses/packet-tracer)
-[![Architecture](https://img.shields.io/badge/Architecture-3--Layer%20Hierarchical-green)](#network-architecture--design-breakdown)
-[![Status](https://img.shields.io/badge/Status-Completed-success)](#verification--testing-results)
-
 ## Overview
 Proyek ini mengimplementasikan infrastruktur jaringan skala enterprise multi-lokasi (*Headquarters* dan *Branch Office*) menggunakan pendekatan **Cisco 3-Layer Hierarchical Model** (Core, Distribution, Access). Desain ini dirancang untuk menjamin ketersediaan tinggi (*High Availability*), redundansi link, serta keamanan akses menuju area *Server Farm* (DMZ).
 
@@ -192,15 +188,3 @@ enterprise-campus-network/
 ├── .gitignore
 └── README.md
 ```
-
----
-
-## How to Run & Test in Cisco Packet Tracer
-
-1. Unduh dan pasang aplikasi **Cisco Packet Tracer** (Versi 8.0 atau lebih baru disarankan).
-2. *Clone* repositori ini atau unduh file `.pkt`:
-   ```bash
-   git clone https://github.com/username/enterprise-campus-network.git
-   ```
-3. Buka file `pkt/Enterprise-Campus-Network.pkt` di Cisco Packet Tracer.
-4. Buka **Command Prompt** atau **Web Browser** pada `PC-BRANCH` atau `PC-HR-A` untuk menguji ping dan akses domain `portal.enterprise.com`.
